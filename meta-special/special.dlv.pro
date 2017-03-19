@@ -1,3 +1,27 @@
+% special.dlv (or special.dlv.pro for nice syntax highlighting on github)
+% 
+% GIVEN: Facts about some figures.
+%
+% QUESTION: Which figure doesn't belong?
+%
+% APPROACH/Idea/Insight:
+% A certain kind of puzzles require to find the figure that is different from all others
+% in that is does *not* have any special properties!
+% To solve the problem, you just need to eliminate all figures which are special in some way
+% and you're left with a (often only one) non-special (or "boring"?) figure.
+% That figure's speciality is not being special in any way.. so it's meta-special :-)
+% 
+% Written for the DLV system: http://www.dlvsystem.com/dlv/
+% 
+% Use as follows: 
+% [meta-special]$ dlv special.dlv.pro -filter=specialFigProp,notSpecial
+% DLV [build BEN/Dec 17 2012   gcc 4.2.1 (Apple Inc. build 5666) (dot 3)]
+% 
+% {specialFigProp(f2,style), specialFigProp(f3,shape), specialFigProp(f4,color), specialFigProp(f5,size), notSpecial(f1)}
+%
+% Note how f2,..,f5 are special in some way, but only f1 isn't special (hence "meta-special" :-)
+
+
 % prop(F,P,V) - figure F has property P with value V
 prop(f1,style,bold).
 prop(f1,size,large).
