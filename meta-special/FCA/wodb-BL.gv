@@ -1,0 +1,52 @@
+digraph Lat{
+ node [ shape=record margin="0.2,0.055" fontname=Helvetica];
+edge[dir="none"];
+c0 [label = "{R S B L|1}"];
+c1 [label = "{R S B|5}"];
+c2 [label = "{R S L|4}"];
+c3 [label = "{R S|5 4}"];
+c4 [label = "{R B L|3}"];
+c5 [label = "{R B|5 3}"];
+c6 [label = "{R L|4 3}"];
+c7 [label = "{R|5 4 3}"];
+c8 [label = "{S B L|2}"];
+c9 [label = "{S B|5 2}"];
+c10 [label = "{S L|4 2}"];
+c11 [label = "{S|5 4 2}"];
+c12 [label = "{B L|3 2}"];
+c13 [label = "{B|5 3 2}"];
+c14 [label = "{L|4 3 2}"];
+c15 [label = "{|5 4 3 2 1}"];
+c1 -> c0
+c2 -> c0
+c3 -> c1
+c3 -> c2
+c4 -> c0
+c5 -> c1
+c5 -> c4
+c6 -> c2
+c6 -> c4
+c7 -> c3
+c7 -> c5
+c7 -> c6
+c8 -> c0
+c9 -> c1
+c9 -> c8
+c10 -> c2
+c10 -> c8
+c11 -> c3
+c11 -> c9
+c11 -> c10
+c12 -> c4
+c12 -> c8
+c13 -> c5
+c13 -> c9
+c13 -> c12
+c14 -> c6
+c14 -> c10
+c14 -> c12
+c15 -> c7
+c15 -> c11
+c15 -> c13
+c15 -> c14
+}
